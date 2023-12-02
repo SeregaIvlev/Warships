@@ -85,9 +85,16 @@ namespace Warships
         }
 
 
-        public static Image selectPreview()
+        public static Image selectShipIcon(int size, bool rotated, bool phantom)
         {
-            return null;
+
+            string path = "icons//" + size.ToString();
+            if (phantom) path += "b";
+            else path += "g";
+            if (rotated) path += "p";
+            else path += "n";
+            path += ".png";
+            return Image.FromFile(path);
         }
 
         public static void FillRandomly(BattleField bf)

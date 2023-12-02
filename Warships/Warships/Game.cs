@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 namespace Warships
 {
+    [Serializable]
     public class Game
     {
         public string FirstName;

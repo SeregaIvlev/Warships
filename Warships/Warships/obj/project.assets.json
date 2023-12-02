@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Notebook\\source\\repos\\Warships\\Warships\\Warships.csproj",
+      "projectUniqueName": "C:\\Users\\Notebook\\Documents\\GitHub\\Warships\\Warships\\Warships\\Warships.csproj",
       "projectName": "Warships",
-      "projectPath": "C:\\Users\\Notebook\\source\\repos\\Warships\\Warships\\Warships.csproj",
+      "projectPath": "C:\\Users\\Notebook\\Documents\\GitHub\\Warships\\Warships\\Warships\\Warships.csproj",
       "packagesPath": "C:\\Users\\Notebook\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Notebook\\source\\repos\\Warships\\Warships\\obj\\",
+      "outputPath": "C:\\Users\\Notebook\\Documents\\GitHub\\Warships\\Warships\\Warships\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "D:\\Soft\\VisualStudio\\SDK\\NuGetPackages"

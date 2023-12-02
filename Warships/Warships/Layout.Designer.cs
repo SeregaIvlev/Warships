@@ -38,6 +38,7 @@
             select_2_ship = new RadioButton();
             select_3_ship = new RadioButton();
             select_4_ship = new RadioButton();
+            button2 = new Button();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
@@ -69,6 +70,7 @@
             button1.TabIndex = 2;
             button1.Text = "Save pattern";
             button1.UseVisualStyleBackColor = true;
+            button1.Click += button1_Click;
             // 
             // RotateButton
             // 
@@ -133,11 +135,22 @@
             select_4_ship.Text = ": 1";
             select_4_ship.UseVisualStyleBackColor = true;
             // 
+            // button2
+            // 
+            button2.Location = new Point(29, 535);
+            button2.Name = "button2";
+            button2.Size = new Size(164, 29);
+            button2.TabIndex = 16;
+            button2.Text = "Load pattern";
+            button2.UseVisualStyleBackColor = true;
+            button2.Click += button2_Click;
+            // 
             // Layout
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1009, 621);
+            Controls.Add(button2);
             Controls.Add(select_4_ship);
             Controls.Add(select_3_ship);
             Controls.Add(select_2_ship);
@@ -165,5 +178,6 @@
         private RadioButton select_2_ship;
         private RadioButton select_3_ship;
         private RadioButton select_4_ship;
+        private Button button2;
     }
 }
