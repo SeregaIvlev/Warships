@@ -152,8 +152,9 @@ namespace Warships
             if (shipCount[0] == 0 && shipCount[1] == 0 && shipCount[2] == 0 && shipCount[3] == 0)
             {
                 int bt = 0;
-                Battle bf = new Battle(g);
-                bf.Show();
+                g.FirstBF = bf;
+                Battle btlWindow = new Battle(g);
+                btlWindow.Show();
                 this.Close();
             }
         }
@@ -167,6 +168,7 @@ namespace Warships
                 bf = (BattleField)formatter.Deserialize(stream);
                 stream.Close();
             }
+            shipCount = new int[4] { 0, 0,0,0 };
 
             updateLayout();
         }

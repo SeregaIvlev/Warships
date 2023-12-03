@@ -17,8 +17,10 @@
 
         private void button1_Click(object sender, EventArgs e)
         {
-            Layout example = new Layout(g);
-            example.Show();
+            g.FirstAve = pictureBox1.Image;
+            g.FirstName = textBox1.Text;
+            Layout placement = new Layout(g);
+            placement.Show();
            // this.Close();
         }
 

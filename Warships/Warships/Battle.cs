@@ -28,9 +28,13 @@ namespace Warships
             InitializeComponent();
             bot = new Bot();
             label1.Text = g.FirstName;
+            pictureBox3.Image = g.FirstAve;
+            bf = g.FirstBF;
+
             label2.Text = g.SecondName;
             pictureBox4.Image = g.SecondAve;
-            pictureBox3.Image = g.FirstAve;
+
+
             //battleType = role;
         }
         Image ship_1 = Image.FromFile("1.png");
@@ -153,12 +157,12 @@ namespace Warships
                     Bitmap enemyFieldEnimated = new Bitmap(enemyField);
                     using (var graphics = Graphics.FromImage(enemyFieldEnimated))
                     {
-                        /*if (shooted[X, Y]) {
+                        if (bf.shooted[X, Y]) {
                             graphics.DrawImage(redKrest, X * 50 + 5, Y * 50 + 5, 40, 40);
                         } else
                         {
                             graphics.DrawImage(aim, X * 50 + 5, Y * 50 + 5, 40, 40);
-                        }*/
+                        }
                     }
                     pictureBox2.Image = enemyFieldEnimated;
                     lastX = X;

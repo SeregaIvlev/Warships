@@ -87,7 +87,6 @@ namespace Warships
 
         public static Image selectShipIcon(int size, bool rotated, bool phantom)
         {
-
             string path = "icons//" + size.ToString();
             if (phantom) path += "b";
             else path += "g";
